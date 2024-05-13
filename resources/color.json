@@ -1,0 +1,1115 @@
+{
+    "丁香色": {
+        "name_cn": "丁香色",
+        "code": "#cca4e3",
+        "red": 204,
+        "green": 164,
+        "blue": 227
+    },
+    "雪青": {
+        "name_cn": "雪青",
+        "code": "#b0a4e3",
+        "red": 176,
+        "green": 164,
+        "blue": 227
+    },
+    "群青": {
+        "name_cn": "群青",
+        "code": "#4c8dae",
+        "red": 76,
+        "green": 141,
+        "blue": 174
+    },
+    "紫棠": {
+        "name_cn": "紫棠",
+        "code": "#56004f",
+        "red": 86,
+        "green": 0,
+        "blue": 79
+    },
+    "绀青": {
+        "name_cn": "绀青",
+        "code": "#003371",
+        "red": 0,
+        "green": 51,
+        "blue": 113
+    },
+    "紫檀": {
+        "name_cn": "紫檀",
+        "code": "#4c221b",
+        "red": 76,
+        "green": 34,
+        "blue": 27
+    },
+    "酱紫": {
+        "name_cn": "酱紫",
+        "code": "#815476",
+        "red": 129,
+        "green": 84,
+        "blue": 118
+    },
+    "紫酱": {
+        "name_cn": "紫酱",
+        "code": "#815463",
+        "red": 129,
+        "green": 84,
+        "blue": 99
+    },
+    "紫色": {
+        "name_cn": "紫色",
+        "code": "#8d4bbb",
+        "red": 141,
+        "green": 75,
+        "blue": 187
+    },
+    "黛紫": {
+        "name_cn": "黛紫",
+        "code": "#574266",
+        "red": 87,
+        "green": 66,
+        "blue": 102
+    },
+    "黛蓝": {
+        "name_cn": "黛蓝",
+        "code": "#425066",
+        "red": 66,
+        "green": 80,
+        "blue": 102
+    },
+    "黛绿": {
+        "name_cn": "黛绿",
+        "code": "#426666",
+        "red": 66,
+        "green": 102,
+        "blue": 102
+    },
+    "黛": {
+        "name_cn": "黛",
+        "code": "#4a4266",
+        "red": 74,
+        "green": 66,
+        "blue": 102
+    },
+    "藏蓝": {
+        "name_cn": "藏蓝",
+        "code": "#3b2e7e",
+        "red": 59,
+        "green": 46,
+        "blue": 126
+    },
+    "藏青": {
+        "name_cn": "藏青",
+        "code": "#2e4e7e",
+        "red": 46,
+        "green": 78,
+        "blue": 126
+    },
+    "蓝灰色": {
+        "name_cn": "蓝灰色",
+        "code": "#a1afc9",
+        "red": 161,
+        "green": 175,
+        "blue": 201
+    },
+    "宝蓝": {
+        "name_cn": "宝蓝",
+        "code": "#4b5cc4",
+        "red": 75,
+        "green": 92,
+        "blue": 196
+    },
+    "花青": {
+        "name_cn": "花青",
+        "code": "#003472",
+        "red": 0,
+        "green": 52,
+        "blue": 114
+    },
+    "靛蓝": {
+        "name_cn": "靛蓝",
+        "code": "#065279",
+        "red": 6,
+        "green": 82,
+        "blue": 121
+    },
+    "靛青": {
+        "name_cn": "靛青",
+        "code": "#177cb0",
+        "red": 23,
+        "green": 124,
+        "blue": 176
+    },
+    "石青": {
+        "name_cn": "石青",
+        "code": "#1685a9",
+        "red": 22,
+        "green": 133,
+        "blue": 169
+    },
+    "碧蓝": {
+        "name_cn": "碧蓝",
+        "code": "#3eede7",
+        "red": 62,
+        "green": 237,
+        "blue": 231
+    },
+    "蓝": {
+        "name_cn": "蓝",
+        "code": "#44cef6",
+        "red": 68,
+        "green": 206,
+        "blue": 246
+    },
+    "蔚蓝": {
+        "name_cn": "蔚蓝",
+        "code": "#70f3ff",
+        "red": 112,
+        "green": 243,
+        "blue": 255
+    },
+    "玄色": {
+        "name_cn": "玄色",
+        "code": "#622a1d",
+        "red": 98,
+        "green": 42,
+        "blue": 29
+    },
+    "栗色": {
+        "name_cn": "栗色",
+        "code": "#60281e",
+        "red": 96,
+        "green": 40,
+        "blue": 30
+    },
+    "胭脂": {
+        "name_cn": "胭脂",
+        "code": "#9d2933",
+        "red": 157,
+        "green": 41,
+        "blue": 51
+    },
+    "赤": {
+        "name_cn": "赤",
+        "code": "#c3272b",
+        "red": 195,
+        "green": 39,
+        "blue": 43
+    },
+    "银朱": {
+        "name_cn": "银朱",
+        "code": "#bf242a",
+        "red": 191,
+        "green": 36,
+        "blue": 42
+    },
+    "赫赤": {
+        "name_cn": "赫赤",
+        "code": "#c91f37",
+        "red": 201,
+        "green": 31,
+        "blue": 55
+    },
+    "殷红": {
+        "name_cn": "殷红",
+        "code": "#be002f",
+        "red": 190,
+        "green": 0,
+        "blue": 47
+    },
+    "枣红": {
+        "name_cn": "枣红",
+        "code": "#c32136",
+        "red": 195,
+        "green": 33,
+        "blue": 54
+    },
+    "洋红": {
+        "name_cn": "洋红",
+        "code": "#ff0097",
+        "red": 255,
+        "green": 0,
+        "blue": 151
+    },
+    "嫣红": {
+        "name_cn": "嫣红",
+        "code": "#ef7a82",
+        "red": 239,
+        "green": 122,
+        "blue": 130
+    },
+    "檀": {
+        "name_cn": "檀",
+        "code": "#b36d61",
+        "red": 179,
+        "green": 109,
+        "blue": 97
+    },
+    "绾": {
+        "name_cn": "绾",
+        "code": "#a98175",
+        "red": 169,
+        "green": 129,
+        "blue": 117
+    },
+    "茜色": {
+        "name_cn": "茜色",
+        "code": "#cb3a56",
+        "red": 203,
+        "green": 58,
+        "blue": 86
+    },
+    "炎": {
+        "name_cn": "炎",
+        "code": "#ff3300",
+        "red": 255,
+        "green": 51,
+        "blue": 0
+    },
+    "酡红": {
+        "name_cn": "酡红",
+        "code": "#dc3023",
+        "red": 220,
+        "green": 48,
+        "blue": 35
+    },
+    "彤": {
+        "name_cn": "彤",
+        "code": "#f35336",
+        "red": 243,
+        "green": 83,
+        "blue": 54
+    },
+    "丹": {
+        "name_cn": "丹",
+        "code": "#ff4e20",
+        "red": 255,
+        "green": 78,
+        "blue": 32
+    },
+    "朱红": {
+        "name_cn": "朱红",
+        "code": "#ff4c00",
+        "red": 255,
+        "green": 76,
+        "blue": 0
+    },
+    "绯红": {
+        "name_cn": "绯红",
+        "code": "#c83c23",
+        "red": 200,
+        "green": 60,
+        "blue": 35
+    },
+    "绛紫": {
+        "name_cn": "绛紫",
+        "code": "#8c4356",
+        "red": 140,
+        "green": 67,
+        "blue": 86
+    },
+    "石榴红": {
+        "name_cn": "石榴红",
+        "code": "#f20c00",
+        "red": 242,
+        "green": 12,
+        "blue": 0
+    },
+    "大红": {
+        "name_cn": "大红",
+        "code": "#ff2121",
+        "red": 255,
+        "green": 33,
+        "blue": 33
+    },
+    "银红": {
+        "name_cn": "银红",
+        "code": "#f05654",
+        "red": 240,
+        "green": 86,
+        "blue": 84
+    },
+    "酡颜": {
+        "name_cn": "酡颜",
+        "code": "#f9906f",
+        "red": 249,
+        "green": 144,
+        "blue": 111
+    },
+    "樱桃色": {
+        "name_cn": "樱桃色",
+        "code": "#c93756",
+        "red": 201,
+        "green": 55,
+        "blue": 86
+    },
+    "海棠红": {
+        "name_cn": "海棠红",
+        "code": "#db5a6b",
+        "red": 219,
+        "green": 90,
+        "blue": 107
+    },
+    "桃红": {
+        "name_cn": "桃红",
+        "code": "#f47983",
+        "red": 244,
+        "green": 121,
+        "blue": 131
+    },
+    "粉红": {
+        "name_cn": "粉红",
+        "code": "#ffb3a7",
+        "red": 255,
+        "green": 179,
+        "blue": 167
+    },
+    "品红": {
+        "name_cn": "品红",
+        "code": "#f00056",
+        "red": 240,
+        "green": 0,
+        "blue": 86
+    },
+    "妃色": {
+        "name_cn": "妃色",
+        "code": "#ff4777",
+        "red": 255,
+        "green": 71,
+        "blue": 119
+    },
+    "朱膘": {
+        "name_cn": "朱膘",
+        "code": "#ed5736",
+        "red": 237,
+        "green": 87,
+        "blue": 54
+    },
+    "火红": {
+        "name_cn": "火红",
+        "code": "#f36838",
+        "red": 243,
+        "green": 104,
+        "blue": 56
+    },
+    "朱砂": {
+        "name_cn": "朱砂",
+        "code": "#ff2d51",
+        "red": 255,
+        "green": 45,
+        "blue": 81
+    },
+    "酒红": {
+        "name_cn": "酒红",
+        "code": "#ff461f",
+        "red": 255,
+        "green": 70,
+        "blue": 31
+    },
+    "黯": {
+        "name_cn": "黯",
+        "code": "#f04155",
+        "red": 240,
+        "green": 65,
+        "blue": 85
+    },
+    "鸦青": {
+        "name_cn": "鸦青",
+        "code": "#41555d",
+        "red": 65,
+        "green": 85,
+        "blue": 93
+    },
+    "墨色": {
+        "name_cn": "墨色",
+        "code": "#424c50",
+        "red": 66,
+        "green": 76,
+        "blue": 80
+    },
+    "墨灰": {
+        "name_cn": "墨灰",
+        "code": "#50616d",
+        "red": 80,
+        "green": 97,
+        "blue": 109
+    },
+    "竹青": {
+        "name_cn": "竹青",
+        "code": "#758a99",
+        "red": 117,
+        "green": 138,
+        "blue": 153
+    },
+    "铜绿": {
+        "name_cn": "铜绿",
+        "code": "#789262",
+        "red": 120,
+        "green": 146,
+        "blue": 98
+    },
+    "青碧": {
+        "name_cn": "青碧",
+        "code": "#549688",
+        "red": 84,
+        "green": 150,
+        "blue": 136
+    },
+    "碧色": {
+        "name_cn": "碧色",
+        "code": "#48c0a3",
+        "red": 72,
+        "green": 192,
+        "blue": 163
+    },
+    "艾绿": {
+        "name_cn": "艾绿",
+        "code": "#1bd1a5",
+        "red": 27,
+        "green": 209,
+        "blue": 165
+    },
+    "缥": {
+        "name_cn": "缥",
+        "code": "#7bcfa6",
+        "red": 123,
+        "green": 207,
+        "blue": 166
+    },
+    "玉色": {
+        "name_cn": "玉色",
+        "code": "#a4e2c6",
+        "red": 164,
+        "green": 226,
+        "blue": 198
+    },
+    "碧绿": {
+        "name_cn": "碧绿",
+        "code": "#7fecad",
+        "red": 127,
+        "green": 236,
+        "blue": 173
+    },
+    "翡翠色": {
+        "name_cn": "翡翠色",
+        "code": "#2edfa3",
+        "red": 46,
+        "green": 223,
+        "blue": 163
+    },
+    "青色": {
+        "name_cn": "青色",
+        "code": "#2add9c",
+        "red": 42,
+        "green": 221,
+        "blue": 156
+    },
+    "青翠": {
+        "name_cn": "青翠",
+        "code": "#3de1ad",
+        "red": 61,
+        "green": 225,
+        "blue": 173
+    },
+    "草绿": {
+        "name_cn": "草绿",
+        "code": "#00e09e",
+        "red": 0,
+        "green": 224,
+        "blue": 158
+    },
+    "绿色": {
+        "name_cn": "绿色",
+        "code": "#00e079",
+        "red": 0,
+        "green": 224,
+        "blue": 121
+    },
+    "绿沈": {
+        "name_cn": "绿沈",
+        "code": "#40de5a",
+        "red": 64,
+        "green": 222,
+        "blue": 90
+    },
+    "松花绿": {
+        "name_cn": "松花绿",
+        "code": "#00e500",
+        "red": 0,
+        "green": 229,
+        "blue": 0
+    },
+    "松柏绿": {
+        "name_cn": "松柏绿",
+        "code": "#0c8918",
+        "red": 12,
+        "green": 137,
+        "blue": 24
+    },
+    "石绿": {
+        "name_cn": "石绿",
+        "code": "#057748",
+        "red": 5,
+        "green": 119,
+        "blue": 72
+    },
+    "青葱": {
+        "name_cn": "青葱",
+        "code": "#21a675",
+        "red": 33,
+        "green": 166,
+        "blue": 117
+    },
+    "葱青": {
+        "name_cn": "葱青",
+        "code": "#16a951",
+        "red": 22,
+        "green": 169,
+        "blue": 81
+    },
+    "葱倩": {
+        "name_cn": "葱倩",
+        "code": "#0aa344",
+        "red": 10,
+        "green": 163,
+        "blue": 68
+    },
+    "油绿": {
+        "name_cn": "油绿",
+        "code": "#0eb83a",
+        "red": 14,
+        "green": 184,
+        "blue": 58
+    },
+    "豆青": {
+        "name_cn": "豆青",
+        "code": "#00bc12",
+        "red": 0,
+        "green": 188,
+        "blue": 18
+    },
+    "豆绿": {
+        "name_cn": "豆绿",
+        "code": "#96ce54",
+        "red": 150,
+        "green": 206,
+        "blue": 84
+    },
+    "葱绿": {
+        "name_cn": "葱绿",
+        "code": "#9ed048",
+        "red": 158,
+        "green": 208,
+        "blue": 72
+    },
+    "葱黄": {
+        "name_cn": "葱黄",
+        "code": "#9ed900",
+        "red": 158,
+        "green": 217,
+        "blue": 0
+    },
+    "柳绿": {
+        "name_cn": "柳绿",
+        "code": "#a3d900",
+        "red": 163,
+        "green": 217,
+        "blue": 0
+    },
+    "嫩绿": {
+        "name_cn": "嫩绿",
+        "code": "#afdd22",
+        "red": 175,
+        "green": 221,
+        "blue": 34
+    },
+    "松花色": {
+        "name_cn": "松花色",
+        "code": "#bddd22",
+        "red": 189,
+        "green": 221,
+        "blue": 34
+    },
+    "赭石": {
+        "name_cn": "赭石",
+        "code": "#c9dd22",
+        "red": 201,
+        "green": 221,
+        "blue": 34
+    },
+    "赭色": {
+        "name_cn": "赭色",
+        "code": "#bce672",
+        "red": 188,
+        "green": 230,
+        "blue": 114
+    },
+    "棕黑": {
+        "name_cn": "棕黑",
+        "code": "#845a33",
+        "red": 132,
+        "green": 90,
+        "blue": 51
+    },
+    "褐色": {
+        "name_cn": "褐色",
+        "code": "#955539",
+        "red": 149,
+        "green": 85,
+        "blue": 57
+    },
+    "棕绿": {
+        "name_cn": "棕绿",
+        "code": "#7c4b00",
+        "red": 124,
+        "green": 75,
+        "blue": 0
+    },
+    "秋色": {
+        "name_cn": "秋色",
+        "code": "#6e511e",
+        "red": 110,
+        "green": 81,
+        "blue": 30
+    },
+    "驼色": {
+        "name_cn": "驼色",
+        "code": "#827100",
+        "red": 130,
+        "green": 113,
+        "blue": 0
+    },
+    "赭": {
+        "name_cn": "赭",
+        "code": "#896c39",
+        "red": 137,
+        "green": 108,
+        "blue": 57
+    },
+    "棕红": {
+        "name_cn": "棕红",
+        "code": "#a88462",
+        "red": 168,
+        "green": 132,
+        "blue": 98
+    },
+    "茶色": {
+        "name_cn": "茶色",
+        "code": "#9c5333",
+        "red": 156,
+        "green": 83,
+        "blue": 51
+    },
+    "棕色": {
+        "name_cn": "棕色",
+        "code": "#9b4400",
+        "red": 155,
+        "green": 68,
+        "blue": 0
+    },
+    "琥珀": {
+        "name_cn": "琥珀",
+        "code": "#b35c44",
+        "red": 179,
+        "green": 92,
+        "blue": 68
+    },
+    "棕黄": {
+        "name_cn": "棕黄",
+        "code": "#b25d25",
+        "red": 178,
+        "green": 93,
+        "blue": 37
+    },
+    "昏黄": {
+        "name_cn": "昏黄",
+        "code": "#ca6924",
+        "red": 202,
+        "green": 105,
+        "blue": 36
+    },
+    "乌金": {
+        "name_cn": "乌金",
+        "code": "#ae7000",
+        "red": 174,
+        "green": 112,
+        "blue": 0
+    },
+    "黄栌": {
+        "name_cn": "黄栌",
+        "code": "#c89b40",
+        "red": 200,
+        "green": 155,
+        "blue": 64
+    },
+    "枯黄": {
+        "name_cn": "枯黄",
+        "code": "#a78e44",
+        "red": 167,
+        "green": 142,
+        "blue": 68
+    },
+    "牙色": {
+        "name_cn": "牙色",
+        "code": "#e29c45",
+        "red": 226,
+        "green": 156,
+        "blue": 69
+    },
+    "金色": {
+        "name_cn": "金色",
+        "code": "#d3b17d",
+        "red": 211,
+        "green": 177,
+        "blue": 125
+    },
+    "秋香色": {
+        "name_cn": "秋香色",
+        "code": "#eedeb0",
+        "red": 238,
+        "green": 222,
+        "blue": 176
+    },
+    "雄黄": {
+        "name_cn": "雄黄",
+        "code": "#eacd76",
+        "red": 234,
+        "green": 205,
+        "blue": 118
+    },
+    "缃色": {
+        "name_cn": "缃色",
+        "code": "#d9b611",
+        "red": 217,
+        "green": 182,
+        "blue": 17
+    },
+    "赤金": {
+        "name_cn": "赤金",
+        "code": "#e9bb1d",
+        "red": 233,
+        "green": 187,
+        "blue": 29
+    },
+    "雌黄": {
+        "name_cn": "雌黄",
+        "code": "#f0c239",
+        "red": 240,
+        "green": 194,
+        "blue": 57
+    },
+    "姜黄": {
+        "name_cn": "姜黄",
+        "code": "#f2be45",
+        "red": 242,
+        "green": 190,
+        "blue": 69
+    },
+    "藤黄": {
+        "name_cn": "藤黄",
+        "code": "#ffc64b",
+        "red": 255,
+        "green": 198,
+        "blue": 75
+    },
+    "橘红": {
+        "name_cn": "橘红",
+        "code": "#ffc773",
+        "red": 255,
+        "green": 199,
+        "blue": 115
+    },
+    "橘黄": {
+        "name_cn": "橘黄",
+        "code": "#ffb61e",
+        "red": 255,
+        "green": 182,
+        "blue": 30
+    },
+    "杏红": {
+        "name_cn": "杏红",
+        "code": "#ff7500",
+        "red": 255,
+        "green": 117,
+        "blue": 0
+    },
+    "橙色": {
+        "name_cn": "橙色",
+        "code": "#ff8936",
+        "red": 255,
+        "green": 137,
+        "blue": 54
+    },
+    "橙黄": {
+        "name_cn": "橙黄",
+        "code": "#ff8c31",
+        "red": 255,
+        "green": 140,
+        "blue": 49
+    },
+    "杏黄": {
+        "name_cn": "杏黄",
+        "code": "#fa8c35",
+        "red": 250,
+        "green": 140,
+        "blue": 53
+    },
+    "鸭黄": {
+        "name_cn": "鸭黄",
+        "code": "#ffa400",
+        "red": 255,
+        "green": 164,
+        "blue": 0
+    },
+    "鹅黄": {
+        "name_cn": "鹅黄",
+        "code": "#ffa631",
+        "red": 255,
+        "green": 166,
+        "blue": 49
+    },
+    "樱草色": {
+        "name_cn": "樱草色",
+        "code": "#faff72",
+        "red": 250,
+        "green": 255,
+        "blue": 114
+    },
+    "黑色": {
+        "name_cn": "黑色",
+        "code": "#fff143",
+        "red": 255,
+        "green": 241,
+        "blue": 67
+    },
+    "漆黑": {
+        "name_cn": "漆黑",
+        "code": "#eaff56",
+        "red": 234,
+        "green": 255,
+        "blue": 86
+    },
+    "煤黑": {
+        "name_cn": "煤黑",
+        "code": "#000000",
+        "red": 0,
+        "green": 0,
+        "blue": 0
+    },
+    "缁色": {
+        "name_cn": "缁色",
+        "code": "#161823",
+        "red": 22,
+        "green": 24,
+        "blue": 35
+    },
+    "黝黑": {
+        "name_cn": "黝黑",
+        "code": "#312520",
+        "red": 49,
+        "green": 37,
+        "blue": 32
+    },
+    "黧": {
+        "name_cn": "黧",
+        "code": "#493131",
+        "red": 73,
+        "green": 49,
+        "blue": 49
+    },
+    "黎": {
+        "name_cn": "黎",
+        "code": "#665757",
+        "red": 102,
+        "green": 87,
+        "blue": 87
+    },
+    "乌黑": {
+        "name_cn": "乌黑",
+        "code": "#5d513c",
+        "red": 93,
+        "green": 81,
+        "blue": 60
+    },
+    "玄青": {
+        "name_cn": "玄青",
+        "code": "#75664d",
+        "red": 117,
+        "green": 102,
+        "blue": 77
+    },
+    "乌色": {
+        "name_cn": "乌色",
+        "code": "#392f41",
+        "red": 57,
+        "green": 47,
+        "blue": 65
+    },
+    "黝": {
+        "name_cn": "黝",
+        "code": "#3d3b4f",
+        "red": 61,
+        "green": 59,
+        "blue": 79
+    },
+    "水色": {
+        "name_cn": "水色",
+        "code": "#725e82",
+        "red": 114,
+        "green": 94,
+        "blue": 130
+    },
+    "苍色": {
+        "name_cn": "苍色",
+        "code": "#6b6882",
+        "red": 107,
+        "green": 104,
+        "blue": 130
+    },
+    "灰色": {
+        "name_cn": "灰色",
+        "code": "#88ada6",
+        "red": 136,
+        "green": 173,
+        "blue": 166
+    },
+    "老银": {
+        "name_cn": "老银",
+        "code": "#75878a",
+        "red": 117,
+        "green": 135,
+        "blue": 138
+    },
+    "花白": {
+        "name_cn": "花白",
+        "code": "#808080",
+        "red": 128,
+        "green": 128,
+        "blue": 128
+    },
+    "蟹壳青": {
+        "name_cn": "蟹壳青",
+        "code": "#bacac6",
+        "red": 186,
+        "green": 202,
+        "blue": 198
+    },
+    "青白": {
+        "name_cn": "青白",
+        "code": "#c2ccd0",
+        "red": 194,
+        "green": 204,
+        "blue": 208
+    },
+    "素": {
+        "name_cn": "素",
+        "code": "#bbcdc5",
+        "red": 187,
+        "green": 205,
+        "blue": 197
+    },
+    "鸭卵青": {
+        "name_cn": "鸭卵青",
+        "code": "#c0ebd7",
+        "red": 192,
+        "green": 235,
+        "blue": 215
+    },
+    "荼白": {
+        "name_cn": "荼白",
+        "code": "#e0f0e9",
+        "red": 224,
+        "green": 240,
+        "blue": 233
+    },
+    "藕荷色": {
+        "name_cn": "藕荷色",
+        "code": "#e0eee8",
+        "red": 224,
+        "green": 238,
+        "blue": 232
+    },
+    "藕色": {
+        "name_cn": "藕色",
+        "code": "#f3f9f1",
+        "red": 243,
+        "green": 249,
+        "blue": 241
+    },
+    "白粉": {
+        "name_cn": "白粉",
+        "code": "#e4c6d0",
+        "red": 228,
+        "green": 198,
+        "blue": 208
+    },
+    "鱼肚白": {
+        "name_cn": "鱼肚白",
+        "code": "#edd1d8",
+        "red": 237,
+        "green": 209,
+        "blue": 216
+    },
+    "缟": {
+        "name_cn": "缟",
+        "code": "#fff2df",
+        "red": 255,
+        "green": 242,
+        "blue": 223
+    },
+    "象牙白": {
+        "name_cn": "象牙白",
+        "code": "#fcefe8",
+        "red": 252,
+        "green": 239,
+        "blue": 232
+    },
+    "月白": {
+        "name_cn": "月白",
+        "code": "#f2ecde",
+        "red": 242,
+        "green": 236,
+        "blue": 222
+    },
+    "莹白": {
+        "name_cn": "莹白",
+        "code": "#fffbf0",
+        "red": 255,
+        "green": 251,
+        "blue": 240
+    },
+    "雪白": {
+        "name_cn": "雪白",
+        "code": "#d6ecf0",
+        "red": 214,
+        "green": 236,
+        "blue": 240
+    },
+    "霜色": {
+        "name_cn": "霜色",
+        "code": "#e3f9fd",
+        "red": 227,
+        "green": 249,
+        "blue": 253
+    },
+    "铅白": {
+        "name_cn": "铅白",
+        "code": "#f0fcff",
+        "red": 240,
+        "green": 252,
+        "blue": 255
+    },
+    "银白": {
+        "name_cn": "银白",
+        "code": "#e9f1f6",
+        "red": 233,
+        "green": 241,
+        "blue": 246
+    },
+    "精白": {
+        "name_cn": "精白",
+        "code": "#f0f0f4",
+        "red": 240,
+        "green": 240,
+        "blue": 244
+    }
+}
