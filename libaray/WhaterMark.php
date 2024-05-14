@@ -49,11 +49,6 @@ class WaterMark
     // 内容间行间距
     private $content_space = 10;
 
-    // 是否生成新的文件类型
-    private $is_new_extention = false;
-    // 新的文件类型
-    private $new_extension;
-
     public function __construct(Color $color = null)
     {
         if (!$color) {
@@ -82,121 +77,43 @@ class WaterMark
         $contents_box = new ContentBox($contents, $this->angle, $this->content_space, $fontfile, $this->font_size);
 
         if ($this->is_tile) {
-            $this->tile($new_img, $color, $contents_box);
+            $locate_params = $this->tile($contents_box);
         } elseif ($this->is_locate) {
-            $this->locate($new_img, $color, $contents_box);
+            $locate_params = $this->locate($contents_box);
         } else {
-            $this->draw($new_img, $color, $contents_box);
+            $locate_params = $this->draw();
         }
 
-        
+        $box = $contents_box->getBox();
+        $contents = $contents_box->getContents();        
+        $per_xy = $contents_box->getPerXy();
+        $per_box_xy = $contents_box->getPerBoxXy();
 
-        // 铺满 计算行列
-        if ($fill) {
-            $row = ceil($img_height / ($box_height + $row_space));
-            $col = ceil($img_width / ($box_width + $col_space));
-        } else {
-            if ($col != 1) {
-                $col_space = ceil(($img_width - ($box_width * $col)) / ($col - 1));
-            }
-            if ($row != 1) {
-                $row_space = ceil(($img_height - ($box_height * $row)) / ($row - 1));
-            }
-        }
+        for ($i = 0; $i < $locate_params['cols']; $i++) {
+            for ($j = 0; $j < $locate_params['rows']; $j++) {
+                $temp_add_x = $locate_params['x'] + $i * ($box['width'] + $locate_params['col_space']);
+                $temp_add_y = $locate_params['y'] + $j * ($box['height'] + $locate_params['row_space']);
 
-        if (1 != $col) {
-            $max_width = ($box_width + $col_space) * $col;
-            $max_x += ($box_width + $col_space) * ($col - 1);
-        } else {
-            $max_width = $box_width;
-        }
-        if (1 != $row) {
-            $max_height = ($box_height + $row_space) * $row;
-            $max_y += ($box_height + $row_space) * ($row - 1);
-        } else {
-            $max_height = $box_height;
-        }
-
-        //计算总体偏移量
-        $x = 0;
-        $y = 0;
-        list($x_location, $y_location) = explode('_', $location);
-        switch ($x_location) {
-            case 'left':
-                if ($min_x < 0) {
-                    $x = 0 - $min_x;
-                }
-                break;
-            case 'center':
-                $diff_width = $img_width - $max_width;
-                $center_x = ceil($diff_width / 2);
-                $x = $center_x - $min_x;
-                break;
-            case 'right':
-                if ($max_x > $img_width) {
-                    $x = 0 - ($max_x = $img_width);
-                } else {
-                    $x = $img_width - $max_x;
-                }
-                break;
-        }
-        switch ($y_location) {
-            case 'height':
-                if ($min_y < 0) {
-                    $y = 0 - $min_y;
-                }
-                break;
-            case 'middle':
-                $diff_height = $img_height - $max_height;
-                $center_y = ceil($diff_height / 2);
-                $y = $center_y - $min_y;
-                break;
-            case 'under':
-                if ($max_y > $img_height) {
-                    $y = 0 - ($min_y - $img_height);
-                } else {
-                    $y = $img_height - $max_y;
-                }
-                break;
-        }
-
-        //加水印
-        for ($c = 0; $c < $col; $c++) {
-            for ($r = 0; $r < $row; $r++) {
-                $temp_add_x = $c * ($box_width + $col_space);
-                $temp_add_y = $r * ($box_height + $row_space);
                 foreach ($contents as $index => $content) {
-                    $content_x = $x + $per_xy[$index]['x'] - $per_box_xy[$index]['x'] + $temp_add_x;
-                    $content_y = $y + $per_xy[$index]['y'] - $per_box_xy[$index]['y'] + $temp_add_y;
-        
-                    imagettftext($new_img, $font_size, $angle, $content_x, $content_y, $color, $fontfile, $content);
+                    $content_x = $locate_params['x'] + $per_xy[$index]['x'] - $per_box_xy[$index]['x'] + $temp_add_x;
+                    $content_y = $locate_params['y'] + $per_xy[$index]['y'] - $per_box_xy[$index]['y'] + $temp_add_y;
+
+                    imagettftext($new_img, $this->font_size, $this->angle, $content_x, $content_y, $color, $fontfile, $content);
                 }
             }
         }
 
         // 输出
-        $output_func = 'image' . $img_type;
-        if (!$output_name) {
-            header('Content-type: ' . $img_info['mime']);
-            $output_func($new_img);
-            exit;
-        } else {
-            $path_name = './outputs/' . $output_name . '.' . $img_type;
-            if (file_exists($path_name)) {
-                $new_path_name = './outputs/' . $output_name . '-' . uniqid() . random_int(1, 100) . '.' . $img_type;
-                copy($path_name, $new_path_name);
-                @unlink($path_name);
-            }
-            $output_func($new_img, $path_name, 100);
-        }
+        $output_func = 'image' . $this->image->getType();
+        
+        header('Content-type: ' . $this->image->getMime());
+        $output_func($new_img);
 
         // 销毁
         imagedestroy($new_img);
-
-        return trim($path_name, '.');
     }
 
-    private function tile($new_img, $color, $contents_box)
+    private function tile($contents_box)
     {
         $image_width = $this->image->getWidth();
         $image_height = $this->image->getHeight();
@@ -207,12 +124,12 @@ class WaterMark
          * 计算铺满的行/列,间距,边距
          * $repeat_col,$repeat_row
          * $col_space,$row_space
-         * $margin_row,$margin_col
+         * $margin_width,$margin_height
          */
         // 是否设置重复列数
         if (!$this->repeat_col) {
             // 未设置，使用列间距，计算列数
-            $repeat_col = $this->repeat_col ?: floor(($image_width + $this->col_space) / ($box['width'] + $this->col_space));
+            $repeat_col = floor(($image_width + $this->col_space) / ($box['width'] + $this->col_space));
             
             // content内容 宽度 超过图片
             if ($repeat_col == 0) {
@@ -246,7 +163,7 @@ class WaterMark
         }
         // 逻辑同上
         if (!$this->repeat_row) {
-            $repeat_row = $this->repeat_row ?: floor(($image_height + $this->row_space) / ($box['height'] + $this->row_space));
+            $repeat_row = floor(($image_height + $this->row_space) / ($box['height'] + $this->row_space));
             if ($repeat_row == 0) {
                 $repeat_row = 1;
                 $row_space = 0;
@@ -269,27 +186,86 @@ class WaterMark
                 $margin_height = floor(($image_height - $water_mark_height) /2);
             }
         }
-        /** END */
 
-        $contents = $contents_box->getContents();        
-
+        return [
+            'x' => $margin_width,
+            'y' => $margin_height,
+            'cols' => $repeat_col,
+            'rows' => $repeat_row,
+            'col_space' => $col_space,
+            'row_space' => $row_space
+        ];
     }
-    private function locate($new_img, $color, $contents_box)
+    private function locate($contents_box)
     {
+        $img_width = $this->image->getWidth();
+        $img_height = $this->image->getHeight();
+
         $box = $contents_box->getBox();
 
-        $repeat_col = $this->repeat_col ?: 1;
-        $repeat_row = $this->repeat_row ?: 1;
+        $min_x = $min_y = PHP_INT_MAX;
+        $max_x = $max_y = PHP_INT_MIN;
+        //计算总体偏移量
+        $x = 0;
+        $y = 0;
+        switch ($this->horizontal_location) {
+            case 'left':
+                if ($min_x < 0) {
+                    $x = 0 - $min_x;
+                }
+                break;
+            case 'center':
+                $diff_width = $img_width - $box['width'];
+                $center_x = ceil($diff_width / 2);
+                $x = $center_x - $min_x;
+                break;
+            case 'right':
+                if ($max_x > $img_width) {
+                    $x = 0 - ($max_x = $img_width);
+                } else {
+                    $x = $img_width - $max_x;
+                }
+                break;
+        }
+        switch ($this->vertical_location) {
+            case 'top':
+                if ($min_y < 0) {
+                    $y = 0 - $min_y;
+                }
+                break;
+            case 'middle':
+                $diff_height = $img_height - $box['height'];
+                $center_y = ceil($diff_height / 2);
+                $y = $center_y - $min_y;
+                break;
+            case 'under':
+                if ($max_y > $img_height) {
+                    $y = 0 - ($min_y - $img_height);
+                } else {
+                    $y = $img_height - $max_y;
+                }
+                break;
+        }
 
-        $water_mark_width = $box['width'] * ($repeat_col + $this->col_space) - $this->col_space;
-        $water_mark_height = $box['height'] * ($repeat_row + $this->col_space) - $this->row_space;
-
-        // switch ($this->)
-
+        return [
+            'x' => $x,
+            'y' => $y,
+            'cols' => $this->repeat_col ?: 1,
+            'rows' => $this->repeat_row ?: 1,
+            'col_space' => $this->col_space,
+            'row_space' => $this->row_space
+        ];
     }
-    private function draw($new_img, $color, $contents_box)
+    private function draw()
     {
-
+        return [
+            'x' => $this->x,
+            'y' => $this->y,
+            'cols' => $this->repeat_col ?: 1,
+            'rows' => $this->repeat_row ?: 1,
+            'col_space' => $this->col_space,
+            'row_space' => $this->row_space
+        ];
     }
 
     /**
@@ -332,6 +308,27 @@ class WaterMark
         $this->color = $color;
 
         return $this;
+    }
+    public function setColorByCode($code): self
+    {
+        $code = trim("#");
+
+        $arr = str_split($code, 2);
+
+        $red = hexdec($arr[0]);
+        $green = hexdec($arr[1]);
+        $blue = hexdec($arr[2]);
+
+        if (isset($arr[3])) {
+            $alpha = hexdec($arr[3]);
+            if ($alpha > 100) {
+                $alpha = 100;
+            }
+        } else {
+            $alpha = 0;
+        }
+
+        return $this->setColorByRGBA($red, $green, $blue, $alpha);
     }
 
     public function setColor($color): self
@@ -486,30 +483,6 @@ class WaterMark
     public function setColSpace($col_space): self
     {
         $this->col_space = $col_space;
-
-        return $this;
-    }
-
-    public function getIsNewExtention()
-    {
-        return $this->is_new_extention;
-    }
-
-    public function setIsNewExtention($is_new_extention): self
-    {
-        $this->is_new_extention = $is_new_extention;
-
-        return $this;
-    }
-
-    public function getNewExtension()
-    {
-        return $this->new_extension;
-    }
-
-    public function setNewExtension($new_extension): self
-    {
-        $this->new_extension = $new_extension;
 
         return $this;
     }

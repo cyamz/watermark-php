@@ -8,6 +8,7 @@ class Image
     protected $width;
     protected $height;
     protected $type;
+    protected $mime;
 
     public function __construct($img_path)
     {
@@ -18,6 +19,7 @@ class Image
         }
         $this->width = $img_info[0]; // 图片宽度
         $this->height = $img_info[1]; // 图片高度
+        $this->mime = $img_info['mime'];
 
         $this->type = self::getImgExtensionBySizeType($img_info[2]);
         if (!$this->type) {
@@ -99,5 +101,10 @@ class Image
     public function getType()
     {
         return $this->type;
+    }
+
+    public function getMime()
+    {
+        return $this->mime;
     }
 }
