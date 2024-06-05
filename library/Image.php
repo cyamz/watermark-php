@@ -1,6 +1,6 @@
 <?php
 
-namespace libaray;
+namespace library;
 
 class Image
 {

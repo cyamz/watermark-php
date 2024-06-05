@@ -1,6 +1,7 @@
 <?php
 
-namespace libaray;
+namespace Utils;
+
 class Tools
 {
     public static function isImage($url)

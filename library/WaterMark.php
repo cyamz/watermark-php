@@ -1,6 +1,6 @@
 <?php
 
-namespace libaray;
+namespace library;
 
 class WaterMark
 {
@@ -49,12 +49,13 @@ class WaterMark
     // 内容间行间距
     private $content_space = 10;
 
-    public function __construct(Color $color = null)
+    public function __construct($image, $color = null)
     {
         if (!$color) {
             $color = new Color(255, 255, 255);
         }
 
+        $this->image = $image;
         $this->color = $color;
     }
 
@@ -113,6 +114,12 @@ class WaterMark
         imagedestroy($new_img);
     }
 
+    /**
+     * 铺满
+     *
+     * @param ContentBox $contents_box
+     * @return array
+     */
     private function tile($contents_box)
     {
         $image_width = $this->image->getWidth();
@@ -156,7 +163,7 @@ class WaterMark
                 $margin_width = 0;
             } else {
                 // 不超过，计算边距
-                $col_space = floor(($image_width - $water_mark_nospace_width) / ($repeat_col - 1));
+                $col_space = ($repeat_col - 1) ? floor(($image_width - $water_mark_nospace_width) / ($repeat_col - 1)) : 0;
                 $water_mark_width = $repeat_col * ($box['width'] + $col_space) - $col_space;
                 $margin_width = floor(($image_width - $water_mark_width) / 2);
             }
@@ -181,7 +188,7 @@ class WaterMark
                 $row_space = 0;
                 $margin_height = 0;
             } else {
-                $row_space = floor(($image_height - $water_mark_nospace_height) / ($repeat_row - 1));
+                $row_space = ($repeat_row - 1) ? floor(($image_height - $water_mark_nospace_height) / ($repeat_row - 1)) : 0;
                 $water_mark_height = $repeat_row * ($box['height'] + $row_space) - $row_space;
                 $margin_height = floor(($image_height - $water_mark_height) /2);
             }
@@ -196,6 +203,12 @@ class WaterMark
             'row_space' => $row_space
         ];
     }
+    /**
+     * 定位
+     *
+     * @param ContentBox $contents_box
+     * @return array
+     */
     private function locate($contents_box)
     {
         $img_width = $this->image->getWidth();
@@ -256,6 +269,11 @@ class WaterMark
             'row_space' => $this->row_space
         ];
     }
+    /**
+     * 直接画
+     *
+     * @return array
+     */
     private function draw()
     {
         return [

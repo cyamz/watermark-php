@@ -1,16 +1,20 @@
 <?php
 
-namespace libaray;
+namespace library8;
 
 class ContentBox
 {
-
-    private $contents;
     private $box;
     private $per_box_xy;
     private $per_xy;
 
-    public function __construct($contents, $angle, $content_space, $fontfile, $font_size)
+    public function __construct(
+        private array $contents, 
+        int $angle, 
+        int $content_space, 
+        string $fontfile,
+        int $font_size
+    )
     {
         // 行间距偏移量
         if ($angle > 0) {

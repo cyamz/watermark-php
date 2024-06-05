@@ -1,14 +1,9 @@
 <?php
 
-namespace libaray;
+namespace library8;
 
 Class Color
 {
-    protected $red;
-    protected $green;
-    protected $blue;
-
-    protected $alpha;
 
     /**
      * Undocumented function
@@ -18,14 +13,13 @@ Class Color
      * @param integer $blue 0-255
      * @param integer 0-127 0为完全不透明
      */
-    public function __construct($red, $green, $blue, $alpha = 0)
-    {
-        $this->red = $red;
-        $this->green = $green;
-        $this->blue = $blue;
-        $this->alpha = $alpha;
-    }
-
+    public function __construct(
+        protected int $red,
+        protected int $green,
+        protected int $blue,
+    
+        protected int $alpha = 0
+    ) {}
 
     public static function createPresetColor($name, $alpha = 0)
     {
